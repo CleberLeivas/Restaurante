@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-image: url(../assets/BackCardapio.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com opacidade */
+}
+
+.wrap-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+}
+
+h2{
+    text-transform: uppercase;
+    background-color: chocolate;
+    border-radius: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4.2rem !important;
+}
+
+.card{
+    border: 8px solid #ffffff !important;
+    border-radius: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card .card-img-top{
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ;
+}
+
+@media (width >= 1024px){
+    body{
+        background-image: url(../assets/BackRestaurante.jpg);
+    }
+    .wrap-card{
+        width: 100vw;
+        flex-direction: row;
+        gap: 2vw;
+    }
+  
+  }
